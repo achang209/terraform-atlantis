@@ -3,7 +3,7 @@ projects:
 - dir: production
   workspace: production
   apply_requirements: [approved]
-  plan_requirements: [mergable]
+  plan_requirements: [mergeable]
 - dir: staging
   workspace: staging
-  plan_requirements: [mergable]
+  plan_requirements: [mergeable]
