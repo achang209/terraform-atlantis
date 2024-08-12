@@ -9,3 +9,4 @@ resource "aws_instance" "production_example" {
     Name = "production-example"
   }
 }
+
