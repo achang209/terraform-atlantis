@@ -1,0 +1,5 @@
+version: 3
+projects:
+- dir: .
+  workspace: production
+  apply_requirements: [approved]

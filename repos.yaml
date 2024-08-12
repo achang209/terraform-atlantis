@@ -1,0 +1,3 @@
+repos:
+- id: github.com/achang209/terraform-atlantis
+  allowed_overrides: [apply_requirements]
