@@ -6,4 +6,4 @@ projects:
   apply_requirements: [approved] # command requirements
 - dir: staging
   workspace: staging
-  apply_requirements: [approved] # command requirements
+  # apply_requirements: [approved] # command requirements
