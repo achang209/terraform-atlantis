@@ -2,6 +2,8 @@
 ### default atlantis workflow ###
 #################################
 
+# dont forget to update ngrok URL in .zshrc and github webhook
+
 atlantis server \
 --atlantis-url="$URL" \
 --gh-user="$USERNAME" \
@@ -14,7 +16,7 @@ atlantis server \
 ### command requirements ########
 #################################
 
-# reinstate atlantis.yaml and repos.yaml
+# uncomment atlantis.yaml
 
 atlantis server \
 --atlantis-url="$URL" \
