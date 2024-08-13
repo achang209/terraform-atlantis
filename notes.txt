@@ -1,0 +1,40 @@
+#################################
+### default atlantis workflow ###
+#################################
+
+atlantis server \
+--atlantis-url="$URL" \
+--gh-user="$USERNAME" \
+--gh-token="$TOKEN" \
+--gh-webhook-secret="$SECRET" \
+--repo-allowlist="$REPO_ALLOWLIST" \
+--tfe-token="$ATLANTIS_TFE_TOKEN"
+
+#################################
+### command requirements ########
+#################################
+
+# reinstate atlantis.yaml and repos.yaml
+
+atlantis server \
+--atlantis-url="$URL" \
+--gh-user="$USERNAME" \
+--gh-token="$TOKEN" \
+--gh-webhook-secret="$SECRET" \
+--repo-allowlist="$REPO_ALLOWLIST" \
+--tfe-token="$ATLANTIS_TFE_TOKEN" \
+--repo-config=/Users/alex/github/terraform-atlantis/repos.yaml
+
+#################################
+### conftest ####################
+#################################
+
+
+atlantis server \
+--atlantis-url="$URL" \
+--gh-user="$USERNAME" \
+--gh-token="$TOKEN" \
+--gh-webhook-secret="$SECRET" \
+--repo-allowlist="$REPO_ALLOWLIST" \
+--tfe-token="$ATLANTIS_TFE_TOKEN" \
+--repo-config=/Users/alex/github/terraform-atlantis/repos.yaml --enable-policy-checks
