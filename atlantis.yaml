@@ -7,4 +7,4 @@ projects:
 - dir: staging
   workspace: staging
   apply_requirements: [approved]
-  plan_requirements: [mergeable]
+  # plan_requirements: [mergeable]
