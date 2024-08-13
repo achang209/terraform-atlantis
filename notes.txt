@@ -1,22 +1,6 @@
-#################################
-### default atlantis workflow ###
-#################################
-
-# dont forget to update ngrok URL in .zshrc and github webhook
-
-atlantis server \
---atlantis-url="$URL" \
---gh-user="$USERNAME" \
---gh-token="$TOKEN" \
---gh-webhook-secret="$SECRET" \
---repo-allowlist="$REPO_ALLOWLIST" \
---tfe-token="$ATLANTIS_TFE_TOKEN"
-
-#################################
-### command requirements ########
-#################################
-
-# uncomment atlantis.yaml
+#############################################################
+### default atlantis workflow w/command requirements ########
+#############################################################
 
 atlantis server \
 --atlantis-url="$URL" \
