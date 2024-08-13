@@ -1,8 +1,10 @@
 version: 3
-# projects:
-# - dir: production
-#   workspace: production
-#   # apply_requirements: [approved, mergeable] # add meregable for conftest
-#   apply_requirements: [approved]
-# - dir: staging
-#   workspace: staging
+projects:
+- dir: production
+  workspace: production
+  # apply_requirements: [approved, mergeable] # add meregable for conftest
+  apply_requirements: [approved]
+- dir: staging
+  workspace: staging
+  apply_requirements: [approved]
+  plan_requirements: [mergeable]
