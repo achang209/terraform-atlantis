@@ -6,7 +6,7 @@ resource "aws_instance" "staging_example" {
   ami = "ami-0862be96e41dcbf74"
   instance_type = "t2.medium"
   tags = {
-    Name = "staging-example"
+    Name = "staging-no-approval"
   }
 }
 
