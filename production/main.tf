@@ -9,3 +9,16 @@ provider "aws" {
 #     Name = "production-example"
 #   }
 # }
+
+
+# resource "aws_security_group" "sg_allow_http" { 
+#   name = "allow-wide-open-http-sg"
+#   description = "Allow wide open http inbound traffic"
+
+#   ingress {
+#       from_port = 8080
+#       to_port = 8080
+#       protocol = "tcp"
+#       cidr_blocks = ["0.0.0.0/0"]
+#   }
+# }
