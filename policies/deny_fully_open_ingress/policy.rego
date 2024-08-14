@@ -6,5 +6,5 @@ deny_fully_open_ingress[msg] {
     rule := resource.change.after.ingress[_]
     resource.type == "aws_security_group"
     contains(rule.cidr_blocks[_], "0.0.0.0/0") 
-    msg = sprintf("ASG `%v` defines a fully open ingress", [name])
+    msg = sprintf("A security group `%v` defines a fully open ingress", [name])
 }
