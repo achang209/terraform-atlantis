@@ -3,10 +3,11 @@ provider "aws" {
 }
 
 # resource "aws_instance" "staging_example" {
-#   ami = "ami-0862be96e41dcbf74"
+#   ami = "ami-003932de22c285676"
+#   # ami = "ami-0862be96e41dcbf74"
 #   instance_type = "t2.micro"
 #   tags = {
-#     Name = "staging-no-approval"
+#     Name = "staging-example"
 #   }
 # }
 
