@@ -11,6 +11,7 @@ resource "aws_instance" "staging_example" {
   }
 }
 
+
 # resource "aws_security_group" "sg_allow_http" { 
 #   name = "allow-wide-open-http-sg"
 #   description = "Allow wide open http inbound traffic"
