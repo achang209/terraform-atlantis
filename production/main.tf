@@ -2,13 +2,13 @@ provider "aws" {
   region = "us-east-1"
 }
 
-# resource "aws_instance" "production_example" {
-#   ami = "ami-04a81a99f5ec58529"
-#   instance_type = "t2.micro"
-#   tags = {
-#     Name = "production-example"
-#   }
-# }
+resource "aws_instance" "production_example" {
+  ami = "ami-04a81a99f5ec58529"
+  instance_type = "t2.micro"
+  tags = {
+    Name = "production-example"
+  }
+}
 
 
 # resource "aws_security_group" "sg_allow_http" { 
