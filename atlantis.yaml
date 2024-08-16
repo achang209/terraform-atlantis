@@ -1,19 +1,6 @@
 #######################################################
 ### basic atlantis workflow ###########################
 #######################################################
-version: 3
-projects:
-- dir: production
-  workspace: production
-  apply_requirements: [approved]
-- dir: staging
-  workspace: staging
-  apply_requirements: [approved]
-
-
-#######################################################
-### apply w/out approval in staging ###################
-#######################################################
 # version: 3
 # projects:
 # - dir: production
@@ -21,7 +8,20 @@ projects:
 #   apply_requirements: [approved]
 # - dir: staging
 #   workspace: staging
-#   # apply_requirements: [approved]
+#   apply_requirements: [approved]
+
+
+#######################################################
+### apply w/out approval in staging ###################
+#######################################################
+version: 3
+projects:
+- dir: production
+  workspace: production
+  apply_requirements: [approved]
+- dir: staging
+  workspace: staging
+  # apply_requirements: [approved]
 
 
 #######################################################
