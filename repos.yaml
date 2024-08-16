@@ -4,11 +4,11 @@ repos:
 #############################################################
 ### conftest policy configs #################################
 #############################################################
-# policies:
-#   owners:
-#     users:
-#       - achang209
-#   policy_sets:
-#     - name: deny_fully_open_ingress
-#       path: /Users/alex/github/terraform-atlantis/policies/deny_fully_open_ingress/
-#       source: local
+policies:
+  owners:
+    users:
+      - achang209
+  policy_sets:
+    - name: deny_fully_open_ingress
+      path: /Users/alex/github/terraform-atlantis/policies/deny_fully_open_ingress/
+      source: local
