@@ -1,14 +1,14 @@
 #######################################################
 ### basic atlantis workflow ###########################
 #######################################################
-# version: 3
-# projects:
-# - dir: production
-#   workspace: production
-#   apply_requirements: [approved]
-# - dir: staging
-#   workspace: staging
-#   apply_requirements: [approved]
+version: 3
+projects:
+- dir: production
+  workspace: production
+  apply_requirements: [approved]
+- dir: staging
+  workspace: staging
+  apply_requirements: [approved]
 
 
 #######################################################
@@ -27,11 +27,11 @@
 #######################################################
 ### conftest policy check #############################
 #######################################################
-version: 3
-projects:
-- dir: production
-  workspace: production
-  apply_requirements: [approved, mergeable] # conftest
-- dir: staging
-  workspace: staging
-  # apply_requirements: [approved]
+# version: 3
+# projects:
+# - dir: production
+#   workspace: production
+#   apply_requirements: [approved, mergeable] # conftest
+# - dir: staging
+#   workspace: staging
+#   # apply_requirements: [approved]
